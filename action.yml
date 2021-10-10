@@ -1,0 +1,12 @@
+name: "Deploy 42maru package to 42maru pypi server"
+description: "Deploy python packages to 42maru pypi server"
+author: "sunny <uram24@42maru.com>"
+inputs:
+  token:
+    description: 'Default GitHub Action token, used for the authenticate about user. \
+                 Can be passed in using {{ secrets.SECRET_TOKEN }}'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
