@@ -1,7 +1,7 @@
 # 42maru Package Auto Deploy Manager
 
-Automatically deploy package by release actions that have a 'created', 'deleted'
-to 42maru pypi server. 
+Automatically deploy a package to 42maru pypi server by release actions that have a 'created', 'deleted'.
+
 
 ## How to use
 
@@ -34,9 +34,9 @@ jobs:
 
 ## When release created 
 
-If that package have been not registered in 42maru pypi, create 42maru pypi
-register templete. But already packages have been registered, create 42maru pypi 
-update templete.
+If that package has been not registered in 42maru pypi, create 42maru pypi
+register templete and deploy the package to pypi. But already the package has been 
+registered, create 42maru pypi update templete.
 
 ## When release deleted
 
@@ -49,12 +49,12 @@ index.html(./index.html).
 
 ## Config
 
-Because this action is fitted 42maru pypi deploy management policy, there are not many settings.<br />
+Because this action is fitted in 42maru pypi deploy management policy, there are not many settings.<br />
 
 There are Just two settings. 
 
 #### PYPI_SECRET
-The PYPI_SECRET is just token string that have workflow and release authorization.
+The PYPI_SECRET is just a token string that have workflow and release authorization.
 
 - Generate token in your developer settings.
 - Register that tokens in your repository's settings secrets tab.
