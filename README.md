@@ -38,6 +38,10 @@ If that package has been not registered in 42maru pypi, create 42maru pypi
 register templete and deploy the package to pypi. But already the package has been 
 registered, create 42maru pypi update templete.
 
+- Release a package with specific tags(v0.0.1)
+- Go to pypi repo pull request tab and just merge that register or update request.
+
+
 ## When release deleted
 
 If specific release version package is deleted, only delete the package anchor in 
@@ -45,7 +49,8 @@ the package index.hml(<package_name>/index.hml).
 But if nothing remains in pypi index related the package, then delete the anchor in main
 index.html(./index.html).
  
- 
+- Delete a specific version package.
+- Go to pypi repo pull request tab and just merge that delete request.
 
 ## Config
 
