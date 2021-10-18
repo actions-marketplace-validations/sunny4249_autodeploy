@@ -24,9 +24,10 @@ jobs:
         with:
           python-version: "3.8"
       - name: Deploy pacakge to 42maru pypi
-        uses: sunny4249/autodeploy@v0.0.1
+        uses: sunny4249/autodeploy@v0.0.2
         with:
           token: ${{ secrets.PYPI_SECRET }}
+          package_name: <package name>
         env:
           GITHUB_CONTEXT: ${{ toJSON(github) }}
 
