@@ -139,6 +139,8 @@ class Parser:
                         author = value["login"]
                         self.body += subject.decode("utf-8") + author + "\n"
                     elif att2 == "body":
+                        if not value:
+                            value = self.package_name
                         long_desc = f"\n```html\n{value}\n```"
                         self.body += subject.decode("utf-8") + long_desc + "\n"
                     else:
